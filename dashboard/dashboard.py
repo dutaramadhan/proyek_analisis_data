@@ -3,7 +3,7 @@ import pandas as pd
 import matplotlib.pylab as plt
 import datetime
 
-all_df = pd.read_csv('all_df.csv')
+all_df = pd.read_csv('https://raw.githubusercontent.com/dutaramadhan/proyek_analisis_data/refs/heads/main/dashboard/all_df.csv')
 all_df['Datetime'] = pd.to_datetime(all_df['Datetime'])
 
 parameter_dict = {
