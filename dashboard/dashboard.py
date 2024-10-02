@@ -103,7 +103,7 @@ with st.container():
 with st.container():
     st.subheader('Daily Information')
     st.write("You can access the daily information of this Air Quality Information.")
-    day = st.date_input(label='Select Date', min_value=datetime.date(2013, 3, 1),max_value=datetime.date(2017, 2, 28), key='daily_date')
+    day = st.date_input(label='Select Date', min_value=datetime.date(2013, 3, 1),max_value=datetime.date(2017, 2, 28), value=datetime.date(2017, 2, 28), key='daily_date')
     city = st.selectbox(label = "Select City", options = ('Aotizhongxin', 'Changping', 'Dingling', 'Dongsi', 'Guanyuan', 'Gucheng', 'Huairou', 'Nongzhanguan', 'Shunyi', 'Tiantan', 'Wanliu', 'Wanshouxigong'), key = 'daily_city')
     parameter_familiar = st.selectbox(label = "Select Parameter", options = list(parameter_dict.keys()),key = 'daily_parameter')
     plot_informations_daily(all_df, city, day, parameter_familiar)
